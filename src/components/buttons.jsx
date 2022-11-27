@@ -10,6 +10,7 @@ function Button(props) {
     return (
         <div
             className={`btn-container ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}
+            id={props.id}
             onClick={() => props.clickHandle(props.children)}>
             {props.children}
         </div>
